@@ -1,0 +1,505 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+h1{
+    color: #ffffff;
+    font-size: 4.2rem;
+    margin: 0;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.col-1{
+    width: 30%;
+    margin: 0 auto;
+}
+.col-2{
+    width: 50%;
+}
+.col-3{
+    width: 100%;
+}
+
+.btn{
+    background-color: #E02C6D;
+    color: aliceblue;
+    padding: .5em 2em;
+    font-weight: 300;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+   }
+
+/*Login button*/
+
+.login-btn{
+    position: relative;
+}
+.login-icon{
+position: absolute;
+color: #ffffff;
+font-size: 1rem;
+bottom: .7em;
+left: .5em;
+border-radius: none;
+}
+
+/*================ COMMON BUTTON =======================*/
+button.common-btn{
+    display: inline-flex;
+    padding: 0;
+
+}
+span.btn-txt{
+    padding: .7em .5em .7em 2em;
+}
+span.btn-icon{
+    padding: .9em 2em 0em 0em;
+}
+.login-icon[name="arrow-forward-outline"]:hover{
+    background: #ffffff;
+    color: #2D25A0;
+    transition: all .3s ease-in;
+    /* background: transparent; */
+}
+button:hover{
+    background: #ffffff;
+    color: #2D25A0;
+    transition: all .3s ease-in;
+    
+}
+
+
+
+
+/*================================ Nav bar ============================*/
+.header{
+    background-color: #2D25A0;
+    height: 10em;
+    display: flex;
+    padding: 0 9.5em;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  
+    
+}
+ul.navbar-list{
+    display: flex;
+    align-items: center;
+}
+ul.navbar-list li{
+    list-style: none;
+    padding: 0 2em;
+    
+   
+}
+.navbar-link:link,
+.navbar-link:visited{
+    display: inline-block;
+    transition: .2s ease-in-out;
+    text-transform: uppercase;
+    color: aliceblue;
+    font-size: .9rem;
+    font-weight: 400;
+    text-decoration: none;
+}
+.navbar-link:hover,
+.navbar-link:active{
+ color: #E02C6D;
+}
+
+/* Mobile Nav*/
+.mobile-nav-button{
+    background: transparent;
+    cursor: pointer;
+    display: none;
+ 
+ }
+
+.mobile-nav-icon{
+   font-size: 2rem;
+    color: aliceblue;
+
+}
+
+.mobile-nav-icon[name="close-outline"]{
+    display: none;
+    z-index: 991;
+}
+.mobile-nav-icon[name="menu-outline"]{
+    
+    z-index: 992;
+}
+
+/*=======================Hero Section ====================*/
+
+section.hero-section{
+    background: #2D25A0;
+    
+}
+.hero-content{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero-text h1{
+    margin-bottom: .5em;
+}
+.hero-image img{
+    width: 54em;
+    height: 45em;
+    margin: 1em 0em 0em 10em;
+}
+
+
+/* =================================================
+==========================================
+Card section===
+=============================
+======================================== */
+.card{
+    margin: 8em auto;
+}
+.card-section{
+    display: flex;
+    margin-bottom: 4em;
+    margin-right: 8em;
+    
+}
+.card-container{
+    padding: 1.5em 1.5em 4em 1.5em;
+    width: 33.3%;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin: 0 2em 0 2em;
+    justify-content: center;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    /* align-items: center; */
+    margin-bottom: 0 3em 4em;
+}
+.card-image img{
+    width: 90%;
+    align-self: center;
+    
+}
+.card-heading p{
+    margin-top: 1em;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #18191f;
+}
+.card-text p{
+    padding: 1em 0 0 0;
+    font-size: 14px;
+    color: #6c6c6c; 
+}
+
+/*=========================================
+==========================================
+Highlight section========================*/
+.highlight-section{
+    margin-top: 20em;
+    margin-bottom: 5em;
+}
+.high{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+
+}
+.high-1{
+    padding: 0 7em 0 0;
+    
+}
+.high-1 p{
+    margin-bottom: 2em;
+    font-size: 16px;
+    color: #6c6c6c; 
+}
+.high-1 h2{
+    font-size: 3rem;
+    font-weight: 600;
+    color: #0a0826;
+}
+.high-1 button:hover{
+    border: 1px solid #2D25A0;
+}
+
+/* ====================== =====================
+======================================
+footer------------------------------------
+=========================================== */
+footer {
+    margin-bottom: 5em;
+}
+.footer {
+    margin-top: 10em;
+    margin-bottom: 10em;
+    display: flex;
+    flex-direction: column;
+  
+}
+.icons img{
+   margin: 0 1.5em 2em 0;
+    height: 40px;
+    width: 40px; 
+}
+img.logo {
+    height: 10em;
+    margin: 0 0 2em -10em;
+}
+.copyright p {
+    margin: -5em 0em 1em 21em;
+    font-size: 1.8em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*940px*/
+@media (max-width: 767px){
+    
+    .mobile-nav-button{
+        display: block;
+    }
+   
+
+    .navbar{
+
+        /* display: none; */
+        width: 100%;
+        height: 100vh;
+        background: #2D25A0;
+        color: rgb(255, 255, 255);
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 990;
+/*TO GET THE TRANSITION*/  
+         transform: translateX(100%);
+         transition: all 0.3s ease-in;
+          opacity: 0;
+          visibility: hidden; 
+         pointer-events: none;
+        
+    }
+    .navbar-list{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-list li a{
+        padding: 1em 0;
+
+    }
+    .mobile-nav-icon{
+        position: absolute;
+        right: 80%;
+        bottom: 30%;
+     
+     }
+
+     
+
+     /*
+
+     */
+     .active .mobile-nav-button .mobile-nav-icon[name="close-outline" ]{
+        display: block;
+
+     }
+
+     .active .mobile-nav-button .mobile-nav-icon[name="menu-outline" ]{
+        display: none;
+
+     }
+
+     .navbar .logo{
+        margin-left: 3em;
+
+     }
+/* ==================== Button=================== */
+span.btn-txt{
+    font-size: 1.3rem;
+    padding: .7em .5em .7em 2em;
+}
+span.btn-icon{
+    font-size: 1.6em;
+    padding: .8em 2em 0em 0em;
+}
+
+/*Login btn*/
+.login-btn{
+    position: absolute;
+    top: 3em;
+    right: 2em;
+    z-index: 992;
+}
+.login-icon{
+    position: absolute;
+    bottom: .7em;
+    left: .5em;
+    border-radius: none;
+    }
+
+ /*------------------------- Banner Section---------------*/
+ section.hero-section {
+    background: #2D25A0;
+    padding: 5em 0 4em 0;
+}
+ .hero-text{
+    width: 100%;
+ }
+ .hero-text h1{
+    font-size: 2.4rem;
+
+ }  
+ .hero-image img{
+    width: 35em;
+    height: 26em;
+    margin: 8em 0em 14em -11em;
+} 
+ .hero-content{
+    flex-direction: column;
+ }
+ span.btn-icon[name="arrow-forward-outline"]{
+    font-size: 1.6em;
+    padding: 0.7em 2em 0em 0em;
+    margin-top: -1em;
+}
+
+/*------------------------------
+------ CARD SECTION--------------
+----------------------------------*/
+.card-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 0;
+    
+}
+.card-container {
+    width: 100%;
+    margin-bottom: 4em;
+    margin: 2.5em 0 0 0;
+}
+.card-heading p{
+    font-size: 2rem;
+}
+.card-text p{
+font-size: 1rem;
+}
+
+/*=========================================
+Highlight
+====================================*/
+.high{
+    flex-direction: column;
+}
+.high-1{
+    width: 100%;
+    padding: 0;
+}
+
+.high-1 h2{
+    padding: 0;
+    font-size: 2rem;
+}
+
+.h-image{
+    margin-top: 4em;
+    width: 100%;
+}
+.highlight-section{
+    margin-top: 10em;
+    margin-bottom: 5em;
+}
+
+/*Footer*/
+img.logo {
+    height: 10em;
+    width: 25em;
+    margin: 0 0 2em -11em;
+
+
+}
+.icons {
+    display: inline-flex;
+    margin: 0 0em 0 1em;
+    justify-content: center;
+}
+.copyright{
+    width: 100%;
+}
+.copyright p {
+    margin: -5em 0em 6em 6em;
+    font-size: 1.5em;
+    width: 70%;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+/*nav bar a active class present thakle 
+     kalo  bg+ menu(mobile menu ) show lorbe*/
+
+     .active .navbar{
+        transform: translateX(0);
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+     }
+    
