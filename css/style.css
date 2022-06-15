@@ -299,6 +299,9 @@ img.logo {
 
 /*940px*/
 @media (max-width: 767px){
+    .body{
+        overflow-x: hidden;
+    }
     
     .mobile-nav-button{
         display: block;
